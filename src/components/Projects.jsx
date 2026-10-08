@@ -1,11 +1,15 @@
 import { useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { profile } from '../data/profile.js'
+import ProjectDetail from './ProjectDetail.jsx'
 
 const categories = ['All', 'Frontend', 'Robotics', 'Hardware', 'Embedded', 'Software']
 
 export default function Projects() {
   const [filter, setFilter] = useState('All')
+  const [open, setOpen] = useState(null)
+
+  const openProject = (project, index) => setOpen({ project, index })
 
   const projects = useMemo(
     () =>
@@ -45,6 +49,16 @@ export default function Projects() {
               key={project.title}
               layout
               className="card project-card"
+              role="button"
+              tabIndex={0}
+              aria-haspopup="dialog"
+              onClick={() => openProject(project, i)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  openProject(project, i)
+                }
+              }}
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9 }}
@@ -64,6 +78,9 @@ export default function Projects() {
                   <li key={t}>{t}</li>
                 ))}
               </ul>
+              <span className="project-open">
+                view project <span className="btn-glyph">↗</span>
+              </span>
             </motion.article>
           ))}
         </AnimatePresence>
@@ -79,6 +96,18 @@ export default function Projects() {
           more on github <span className="btn-glyph">↗</span>
         </a>
       </div>
+
+      <AnimatePresence>
+        {open && (
+          <ProjectDetail
+            key={open.project.title}
+            project={open.project}
+            index={open.index}
+            githubFallback={profile.socials[0].href}
+            onClose={() => setOpen(null)}
+          />
+        )}
+      </AnimatePresence>
     </section>
   )
 }

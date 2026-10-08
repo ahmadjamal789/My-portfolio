@@ -63,6 +63,10 @@ export const profile = {
       blurb:
         'Browser playground with drag-and-drop springs, pendulums and orbits — tweak gravity and damping in real time.',
       tech: ['React', 'Canvas', 'Framer Motion'],
+      description: 'Drop springs, pendulums and orbiting bodies onto an empty canvas, then tweak gravity, mass and damping live while everything keeps simulating. Each object is draggable, constraints stay stable, and the whole scene renders on a plain 2D canvas at 60fps.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#22d3ee',
     },
     {
@@ -71,6 +75,10 @@ export const profile = {
       blurb:
         'Full storefront with cart state, product filters, dark mode and buttery micro-interactions throughout.',
       tech: ['React', 'Tailwind', 'Zustand'],
+      description: 'A complete shop front-end: cart state that survives reloads, faceted product filters, search and a checkout flow with optimistic updates. Styled head-to-toe in Tailwind with micro-interactions on every hover, drawer and modal.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#a855f7',
     },
     {
@@ -79,6 +87,10 @@ export const profile = {
       blurb:
         'Live weather app with animated condition scenes and a 7-day forecast pulled from a public API.',
       tech: ['React', 'REST API', 'CSS Animations'],
+      description: 'Type any city and get current conditions rendered as an animated scene - rain streaks, drifting clouds, a night-time glow - plus a 7-day forecast. Data comes from a public REST API with graceful offline and error states.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#fbbf24',
     },
     {
@@ -87,6 +99,10 @@ export const profile = {
       blurb:
         'My own component library — buttons, toggles, modals and bars, all animated and themeable via tokens.',
       tech: ['React', 'Storybook', 'Design Tokens'],
+      description: 'My own component library: buttons, toggles, modals, toasts and progress bars, all built on design tokens so a whole theme swaps in one line. Every component is documented in Storybook with keyboard and focus states covered.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#e879f9',
     },
     {
@@ -95,6 +111,10 @@ export const profile = {
       blurb:
         'Gamified typing test with a live WPM graph, accuracy heatmap and a local leaderboard.',
       tech: ['TypeScript', 'Charts', 'LocalStorage'],
+      description: 'A gamified typing test that streams your WPM as a live graph and maps errors onto an accuracy heatmap. Results persist to localStorage and feed a local leaderboard so you can chase your own record.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#4ade80',
     },
     {
@@ -103,6 +123,10 @@ export const profile = {
       blurb:
         'Self-driving follower with array-sensor PID control, lane recovery and speed mapping on ATmega.',
       tech: ['Arduino', 'C++', 'PID', 'IR Sensors'],
+      description: 'An array of IR sensors reads the line and a PID loop steers the motors, with lane-recovery logic for sharp corners and junctions. Firmware runs on ATmega with calibrated speed mapping for different track surfaces.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#00ff9d',
     },
     {
@@ -111,6 +135,10 @@ export const profile = {
       blurb:
         'ESP32 + CT-sensor power meter streaming consumption to a live React dashboard over MQTT.',
       tech: ['ESP32', 'React', 'MQTT', 'KiCad'],
+      description: 'A non-invasive CT clamp around the mains feeds an ESP32 that samples real power and publishes it over MQTT. A React dashboard subscribes live and charts usage per appliance, with tariffs applied on the fly.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#22d3ee',
     },
     {
@@ -119,6 +147,10 @@ export const profile = {
       blurb:
         'Zero-dependency C toolchain to flash, log and trace registers over UART with ring-buffer parsing.',
       tech: ['C', 'STM32', 'Registers'],
+      description: 'A zero-dependency C toolchain that flashes the target, streams logs and dumps registers over UART, parsing everything through a ring buffer so nothing is dropped at high baud rates. Built for debugging without an IDE.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#a855f7',
     },
     {
@@ -127,6 +159,10 @@ export const profile = {
       blurb:
         'Two-wheeler driven by an IMU glove; orientation maps to throttle, steering and braking.',
       tech: ['MPU6050', 'nRF24', 'Arduino'],
+      description: 'An IMU glove sends orientation over a 2.4GHz link; pitch maps to throttle, roll to steering and a flick to brake. Filtering on the glove side keeps the car from jittering on noisy sensor data.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#f97316',
     },
     {
@@ -135,6 +171,10 @@ export const profile = {
       blurb:
         'Physics visualizer for trajectories with drag, wind and variable gravity rendered in the browser.',
       tech: ['Python', 'Numerical Methods', 'Matplotlib'],
+      description: 'Enter launch angle, speed, drag coefficient and wind, then watch the trajectory solved numerically and drawn frame by frame. Includes comparison against the ideal vacuum solution and exportable plots.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#38bdf8',
     },
     {
@@ -143,6 +183,10 @@ export const profile = {
       blurb:
         'Obstacle-avoiding rover with ultrasonic + bump sensors and a state machine for room coverage.',
       tech: ['Ultrasonic', 'State Machine', 'DC Motors'],
+      description: 'Ultrasonic and bump sensors feed a finite state machine that covers a room in lanes, escapes corners and resumes after collisions. A small chassis with geared DC motors and a rechargeable pack.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#facc15',
     },
     {
@@ -151,6 +195,10 @@ export const profile = {
       blurb:
         'Custom 2-layer PCB with USB-C, ST-Link footprint, crystal layout and labelled headers.',
       tech: ['KiCad', 'STM32F103', 'USB-C'],
+      description: 'A custom 2-layer PCB carrying an STM32F103 with USB-C, an ST-Link footprint, proper crystal layout and clearly labelled break-out headers. Routed in KiCad, fabricated and assembled by hand.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#2dd4bf',
     },
     {
@@ -159,6 +207,10 @@ export const profile = {
       blurb:
         'Telegram bot that scrapes the UNILAG portal, resolves clashes and replies in under a second.',
       tech: ['Python', 'Telegram API', 'Scraping'],
+      description: 'The bot scrapes the UNILAG portal, parses course codes and compares them against the timetable you already saved, replying with clashes resolved in under a second. Written in Python with session handling for the flaky portal.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#818cf8',
     },
     {
@@ -167,6 +219,10 @@ export const profile = {
       blurb:
         'GitHub Actions that compile for three targets, run unit tests and auto-bump firmware versions.',
       tech: ['GitHub Actions', 'CMake', 'Test-driven'],
+      description: 'GitHub Actions compiles for three targets on every push, runs the unit test suite and auto-bumps the firmware version tag on merge. Broken builds fail fast before anything touches hardware.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#e879f9',
     },
     {
@@ -175,6 +231,10 @@ export const profile = {
       blurb:
         'LDR-based tracker with stepper motors maximizing panel tilt against a sun-position model.',
       tech: ['LDR Array', 'Steppers', 'Solar'],
+      description: 'Four LDRs compare light levels and drive two steppers to keep the panel perpendicular to the sun, cross-checked against a sun-position model for cloudy days. Mount printed, frame in aluminium.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#fbbf24',
     },
     {
@@ -183,6 +243,10 @@ export const profile = {
       blurb:
         'Rule-based simulation of growth, apoptosis and mutation rendered on canvas for a computational-biology course project.',
       tech: ['JavaScript', 'Canvas', 'CA Rules'],
+      description: 'A rule-based automaton where cells grow, divide, undergo apoptosis and mutate, rendered on canvas for a computational-biology course project. Rules are tweakable so you can watch different tissue patterns emerge.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#4ade80',
     },
     {
@@ -191,6 +255,10 @@ export const profile = {
       blurb:
         'Battery-powered sensor node reporting temperature, humidity and soil moisture over LoRa to a gateway.',
       tech: ['LoRa', 'STM32', 'Low Power'],
+      description: 'An STM32 node samples temperature, humidity and soil moisture, then transmits over LoRa at the lowest duty cycle the battery allows. Deep-sleep states push the pack life to months in the field.',
+      image: '',
+      github: '',
+      live: '',
       accent: '#67e8f9',
     },
   ],
